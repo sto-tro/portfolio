@@ -100,7 +100,7 @@ header h1 {
 }
 
 .work-item img {
-    max-width: 200px; /* 画像の最大幅を調整 */
+    max-width: 150px; /* 画像の最大幅を調整 */
     height: auto; /* 画像の高さを自動調整 */
     display: block;
     margin: 0 auto; /* 画像を中央揃え */
@@ -116,12 +116,119 @@ footer {
     text-align: center;
     height: 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* 横方向の中央 */
+    justify-content: center; /* 縦方向の中央 */
 }
 
 footer p {
     font-size: 8px;
     color: #E6FFE9;
     margin: 0;
+}
+
+/* PC版のスタイル */
+@media screen and (min-width: 601px) {
+
+    header {
+        height: 700px;
+    }
+
+    .about {
+        text-align: center;
+        align-items: center;
+        height: 400px;
+        color: #CCCCFF;
+    }
+    
+    .about h1{
+        padding-top: 10px;
+        font-size: 40px;
+    }
+    
+    .about h2 {
+        font-size: 20px;
+        margin-top: -40px;
+    }
+    
+    .about img {
+        max-width: 250px; /* 画像の大きさを調節 */
+        height: auto; /* 画像の高さを自動調整 */
+        margin-right: 20px; /* 画像とテキストの間のスペースを調整 */
+        margin-left: -20px;
+        display: inline-block; /* 横並びにする */
+        vertical-align: middle;
+    }
+    
+    .about p {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 25px;
+    }
+    
+    .about .about-text {
+        display: inline-block;
+        max-width: 500px; /* テキストの最大幅を調整 */
+        text-align: left; /* テキストの揃えを左揃えに */
+    }
+
+    .skill {
+        text-align: center;
+        color: #E6FFE9;
+        background-color: #CCCCFF;
+        height: 350px;
+    }
+    
+    .skill h1{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    
+    .skill h2 {
+        font-size: 20px;
+        margin-top: -40px;
+    }
+
+    .work {
+        height: 1850px;
+    }
+
+    .work h1{
+        padding-top: 15px;
+        font-size: 40px;
+    }
+    
+    .work h2 {
+        font-size: 20px;
+        margin-top: -40px;
+    }
+
+    .work-item {
+        display: inline-block;
+        margin: 20px; /* 画像と説明文の間のスペースを調整 */
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .work-item img {
+        max-width: 400px; /* 画像の最大幅を調整 */
+        height: auto; /* 画像の高さを自動調整 */
+        display: block;
+        margin: 0 auto; /* 画像を中央揃え */
+    }
+    
+    .work-item .description {
+        margin-top: 15px; /* 説明文と画像の間のスペースを調整 */
+        font-size: 30px; /* 説明文のフォントサイズを調整 */
+    }
+    
+    footer {
+        height: 50px;
+    }
+    
+    footer p {
+        font-size: 16px;
+        color: #E6FFE9;
+        margin: 0;
+    }
+
 }
