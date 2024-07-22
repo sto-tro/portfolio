@@ -2,6 +2,10 @@ body { /*全体に影響*/
     margin: 0; /*余白を削除してページの端から*/
     padding: 0; /*内側の余白をなくす*/
     font-family: 筑紫A丸ゴシック;
+    background-color: #E6FFE9;
+    
+    /*background: linear-gradient(45deg, #E6FFE9 25%, #FFFFFF 25%, #FFFFFF 50%, #E6FFE9 50%, #E6FFE9 75%, #FFFFFF 75%);
+    background-size: 30px 30px; /* ストライプの幅を設定 */
 }
 
 header {
@@ -13,10 +17,10 @@ header {
     padding: 0;
     display: flex;
     flex-direction: column;
+    color: #FFFFFF;
 }
 
 header h1 {
-    color: #FFFFFF;
     margin-left: 20px;
     margin-top: 15px;
 }
@@ -24,6 +28,8 @@ header h1 {
 .about {
     text-align: center;
     align-items: center;
+    height: 250px;
+    color: #CCCCFF;
 }
 
 .about h1{
@@ -57,10 +63,14 @@ header h1 {
 
 .skill {
     text-align: center;
+    color: #E6FFE9;
+    background-color: #CCCCFF;
+    height: 200px;
 }
 
 .skill h1 {
     font-size: 25px;
+    padding-top: 10px; /* 背景の内側の上のスペースを調整 */
 }
 
 .skill h2 {
@@ -68,6 +78,50 @@ header h1 {
     margin-top: -20px;
 }
 
-.work img {
-    width: 100%;
+.work {
+    text-align: center;
+    color: #CCCCFF;
+}
+
+.work h1 {
+    font-size: 25px;
+}
+
+.work h2 {
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+.work-item {
+    display: inline-block;
+    margin: 20px; /* 画像と説明文の間のスペースを調整 */
+    vertical-align: middle;
+    text-align: center;
+}
+
+.work-item img {
+    max-width: 200px; /* 画像の最大幅を調整 */
+    height: auto; /* 画像の高さを自動調整 */
+    display: block;
+    margin: 0 auto; /* 画像を中央揃え */
+}
+
+.work-item .description {
+    margin-top: 15px; /* 説明文と画像の間のスペースを調整 */
+    font-size: 13px; /* 説明文のフォントサイズを調整 */
+}
+
+footer {
+    background-color: #CCCCFF;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 8px;
+    color: #E6FFE9;
+    margin: 0;
 }
