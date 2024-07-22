@@ -1,18 +1,71 @@
 body { /*全体に影響*/
     margin: 0; /*余白を削除してページの端から*/
     padding: 0; /*内側の余白をなくす*/
-    font-family: BIZ_UDPGothic;
-    color: #242424;
+    font-family: 筑紫A丸ゴシック;
 }
 
-.header {
+header {
     background-image: url('ttmy.jpg'); /* 画像のパスを指定 */
     background-position: center; /* 画像の位置を中央に */
+    background-size: cover;
     height: 500px;
     width: 100%;
     padding: 0;
     display: flex;
     flex-direction: column;
+}
+
+header h1 {
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.about {
+    text-align: center;
+    align-items: center;
+}
+
+.about h1{
+    font-size: 25px;
+}
+
+.about h2 {
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+.about img {
+    max-width: 150px; /* 画像の大きさを調節 */
+    height: auto; /* 画像の高さを自動調整 */
+    margin-right: 20px; /* 画像とテキストの間のスペースを調整 */
+    margin-left: -20px;
+    display: inline-block; /* 横並びにする */
+    vertical-align: middle;
+}
+
+.about p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about .about-text {
+    display: inline-block;
+    max-width: 500px; /* テキストの最大幅を調整 */
+    text-align: left; /* テキストの揃えを左揃えに */
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill h1 {
+    font-size: 25px;
+}
+
+.skill h2 {
+    font-size: 12px;
+    margin-top: -20px;
 }
 
 .work img {
