@@ -310,7 +310,11 @@ footer p {
     
     .work-item .description {
         margin-top: 15px; /* 説明文と画像の間のスペースを調整 */
-        font-size: 30px; /* 説明文のフォントサイズを調整 */
+        font-size: 30px;
+    }
+
+    .ex-description {
+        font-size: 15px;
     }
     
     footer {
