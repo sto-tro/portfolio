@@ -55,16 +55,26 @@ header h1 {
     margin-top: -20px;
 }
 
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .about img {
     max-width: 150px; /* 画像の大きさを調節 */
     height: auto; /* 画像の高さを自動調整 */
-    margin-right: 20px; /* 画像とテキストの間のスペースを調整 */
-    margin-left: -20px;
-    display: inline-block; /* 横並びにする */
-    vertical-align: middle;
+    margin-right: 40px; /* 画像とテキストの間のスペースを調整 */
+    display: flex;
     border: 5px solid #CCCCFF; /* 枠線の色を指定 */
     border-radius: 50%; /* 円形に切り取る */
     box-sizing: border-box; /* 枠線を含めたサイズを計算 */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .about .about-text {
@@ -74,7 +84,7 @@ header h1 {
 
 .ex-about {
     font-size: 20px;
-    font-weight: light;
+    font-weight: lighter;
 }
 
 .skill {
@@ -214,8 +224,19 @@ footer p {
         max-width: 150px;
     }
 
-    .about p {
-        font-size: 14px;
+    .text-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .about-text {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .ex-about {
+        font-size: 10px;
+        font-weight: lighter;
     }
 
     .skill {
@@ -274,12 +295,17 @@ footer p {
         box-sizing: border-box; /* 枠線とパディングを含めて幅を計算 */
         word-wrap: break-word; /* 長い単語を折り返す */
         vertical-align: top; /* 上部揃え */
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .work-item img {
         width: 100%; /* 幅を枠線に合わせる */
         border: 4px solid #CBFFD3; /* 白い枠線を指定 */
         border-radius: 8px; /* 枠線の角を丸くする*/
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     .work-item .description {
@@ -292,6 +318,20 @@ footer p {
         line-height: 0.2; /* 行間を調整 */
         margin: 0; /* 上下の余白をなくす */
         padding: 0; /* 内側の余白をなくす */
+    }
+
+    .create-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .create-images img {
+        width: 50px; /* 小さな画像の幅を指定 */
+        height: auto;
+        margin: 0 10px; /* 画像間のスペースを調整 */
+        border: none; /* 枠線を削除 */
+        border-radius: 0; /* 枠線の角を削除 */
     }
 
     footer {
@@ -386,7 +426,7 @@ footer p {
     }
 
     .work {
-        height: 1900px;
+        height: 2150px;
     }
 
     .work h1{
@@ -433,6 +473,20 @@ footer p {
         line-height: 0.2; /* 行間を調整 */
         margin: 0; /* 上下の余白をなくす */
         padding: 0; /* 内側の余白をなくす */
+    }
+
+    .create-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .create-images img {
+        width: 70px; /* 小さな画像の幅を指定 */
+        height: auto;
+        margin: 0 10px; /* 画像間のスペースを調整 */
+        border: none; /* 枠線を削除 */
+        border-radius: 0; /* 枠線の角を削除 */
     }
 
     footer {
@@ -509,7 +563,7 @@ footer p {
     }
 
     .work {
-        height: 1450px;
+        height: 1600px;
     }
 
     .work h1{
@@ -556,6 +610,20 @@ footer p {
         line-height: 0.2; /* 行間を調整 */
         margin: 0; /* 上下の余白をなくす */
         padding: 0; /* 内側の余白をなくす */
+    }
+
+    .create-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .create-images img {
+        width: 70px; /* 小さな画像の幅を指定 */
+        height: auto;
+        margin: 0 5px; /* 画像間のスペースを調整 */
+        border: none; /* 枠線を削除 */
+        border-radius: 0; /* 枠線の角を削除 */
     }
     
     footer {
@@ -631,10 +699,10 @@ footer p {
     }
 
     .work {
-        height: 1px;
+        height: 200px;
     }
-
-    .work h1{
+    
+    .work h1 {
         padding-top: 15px;
         font-size: 50px;
     }
@@ -643,41 +711,55 @@ footer p {
         font-size: 20px;
         margin-top: -40px;
     }
-
+    
     .work-item {
         display: inline-block;
-        margin: 30px; /* 画像と説明文の間のスペースを調整 */
+        margin: 30px;
         vertical-align: middle;
         text-align: center;
-        border: 2px solid #CC99FF; /* 枠線の太さ、スタイル、色を指定 */
-        padding: 30px; /* 枠線とコンテンツの間に余白を追加 */
-        border-radius: 8px; /* 枠線の角を丸くする */
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 軽い影を追加する */
-        width: 400px; /* 枠線の幅を指定 */
-        box-sizing: border-box; /* 枠線とパディングを含めて幅を計算 */
-        word-wrap: break-word; /* 長い単語を折り返す */
-        vertical-align: top; /* 上部揃え */
+        border: 2px solid #CC99FF;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        width: 400px;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        vertical-align: top;
     }
     
     .work-item img {
-        width: 100%; /* 幅を枠線に合わせる */
-        height: auto; /* 画像の高さを自動調整 */
+        width: 100%;
+        height: auto;
         display: block;
-        margin: 0 auto; /* 画像を中央揃え */
-        border: 4px solid #CBFFD3; /* 白い枠線を指定 */
-        border-radius: 8px; /* 枠線の角を丸くする */
+        margin: 0 auto;
+        border: 4px solid #CBFFD3;
+        border-radius: 8px;
     }
     
     .work-item .description {
-        margin-top: 15px; /* 説明文と画像の間のスペースを調整 */
-        font-size: 30px; /* 説明文のフォントサイズを調整 */
+        margin-top: 15px;
+        font-size: 30px;
     }
     
     .ex-description {
         font-size: 20px;
-        line-height: 0.5; /* 行間を調整 */
-        margin: 0; /* 上下の余白をなくす */
-        padding: 0; /* 内側の余白をなくす */
+        line-height: 0.5;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .create-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .create-images img {
+        width: 100px; /* 小さな画像の幅を指定 */
+        height: auto;
+        margin: 0 10px; /* 画像間のスペースを調整 */
+        border: none; /* 枠線を削除 */
+        border-radius: 0; /* 枠線の角を削除 */
     }
 
     footer {
