@@ -75,6 +75,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    line-height: 0.2; /* 行間を調整 */
 }
 
 .about .about-text {
@@ -225,8 +226,7 @@ footer p {
     }
 
     .text-content {
-        align-items: center;
-        text-align: center;
+        text-align: left;
     }
 
     .about .about-text {
@@ -351,41 +351,35 @@ footer p {
     }
 
     .about {
-        text-align: center;
-        align-items: center;
-        height: 400px;
+        height: 360px;
         color: #CCCCFF;
     }
-    
-    .about h1{
-        padding-top: 10px;
+
+    .about h1 {
         font-size: 40px;
     }
-    
+
     .about h2 {
         font-size: 20px;
         margin-top: -40px;
     }
-    
+
     .about img {
-        max-width: 250px; /* 画像の大きさを調節 */
-        height: auto; /* 画像の高さを自動調整 */
-        margin-right: 20px; /* 画像とテキストの間のスペースを調整 */
-        margin-left: -20px;
-        display: inline-block; /* 横並びにする */
-        vertical-align: middle;
+        max-width: 250px;
     }
-    
-    .about p {
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 25px;
+
+    .text-content {
+        text-align: left;
     }
-    
+
     .about .about-text {
-        display: inline-block;
-        max-width: 500px; /* テキストの最大幅を調整 */
-        text-align: left; /* テキストの揃えを左揃えに */
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .ex-about {
+        font-size: 20px;
+        font-weight: lighter;
     }
 
     .skill {
@@ -506,43 +500,38 @@ footer p {
     header {
         height: 700px;
     }
-
+    
     .about {
-        text-align: center;
-        align-items: center;
-        height: 400px;
+        height: 420px;
         color: #CCCCFF;
     }
-    
-    .about h1{
-        padding-top: 10px;
+
+    .about h1 {
         font-size: 40px;
     }
-    
+
     .about h2 {
         font-size: 20px;
         margin-top: -40px;
     }
-    
+
     .about img {
-        max-width: 250px; /* 画像の大きさを調節 */
-        height: auto; /* 画像の高さを自動調整 */
-        margin-right: 60px; /* 画像とテキストの間のスペースを調整 */
-        margin-left: -20px;
-        display: inline-block; /* 横並びにする */
-        vertical-align: middle;
+        max-width: 300px;
+        margin-right: 60px;
     }
-    
-    .about p {
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 25px;
+
+    .text-content {
+        text-align: left;
     }
-    
+
     .about .about-text {
-        display: inline-block;
-        max-width: 500px; /* テキストの最大幅を調整 */
-        text-align: left; /* テキストの揃えを左揃えに */
+        font-size: 45px;
+        font-weight: bold;
+    }
+    
+    .ex-about {
+        font-size: 20px;
+        font-weight: lighter;
     }
 
     .skill {
@@ -645,40 +634,36 @@ footer p {
     }
 
     .about {
-        text-align: center;
-        align-items: center;
-        height: 450px;
+        height: 460px;
         color: #CCCCFF;
     }
-    
-    .about h1{
-        font-size: 50px;
+
+    .about h1 {
+        font-size: 40px;
     }
-    
+
     .about h2 {
         font-size: 20px;
         margin-top: -40px;
     }
-    
+
     .about img {
-        max-width: 300px; /* 画像の大きさを調節 */
-        height: auto; /* 画像の高さを自動調整 */
-        margin-right: 100px; /* 画像とテキストの間のスペースを調整 */
-        margin-left: -20px;
-        display: inline-block; /* 横並びにする */
-        vertical-align: middle;
+        max-width: 350px;
+        margin-right: 60px;
     }
-    
-    .about p {
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 25px;
+
+    .text-content {
+        text-align: left;
     }
-    
+
     .about .about-text {
-        display: inline-block;
-        max-width: 500px; /* テキストの最大幅を調整 */
-        text-align: left; /* テキストの揃えを左揃えに */
+        font-size: 60px;
+        font-weight: bold;
+    }
+    
+    .ex-about {
+        font-size: 30px;
+        font-weight: lighter;
     }
 
     .skill {
