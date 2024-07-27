@@ -48,6 +48,9 @@ header h1 {
     margin-left: -20px;
     display: inline-block; /* 横並びにする */
     vertical-align: middle;
+    border: 5px solid #CCCCFF; /* 白い枠線を指定 */
+    border-radius: 50%; /* 円形に切り取る */
+    box-sizing: border-box; /* 枠線を含めたサイズを計算 */
 }
 
 .about p {
@@ -76,6 +79,40 @@ header h1 {
 .skill h2 {
     font-size: 12px;
     margin-top: -20px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* アイテム間のスペース */
+    margin-top: 40px;
+}
+
+.skill-item, .skill-container img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* 正円の直径 */
+    height: 150px; /* 正円の直径 */
+    background-color: #E6FFE9; /* 円の背景色 */
+    border-radius: 50%; /* 正円にする */
+    font-size: 50px; /* 文字サイズ */
+    color: #CCCCFF; /* 文字色 */
+}
+
+.skill-item {
+    background-color: #E6FFE9; /* 円の背景色 */
+    font-family: '筑紫A丸ゴシック', sans-serif; /* フォントファミリーを指定 */
+}
+
+.skill-container img {
+    width: 120px; /* 正円の直径 */
+    height: 120px; /* 正円の直径 */
+    border-radius: 50%; /* 正円にする */
+    background-color: #E6FFE9; /* 円の背景色 */
+    object-fit: cover; /* 画像が枠内に収まるように調整 */
+    padding: 10px; /* 画像が枠に触れないようにするための余白 */
 }
 
 .work {
@@ -168,6 +205,26 @@ footer p {
 
     .skill h2 {
         font-size: 12px;
+    }
+
+    .skill-container {
+        gap: 20px; /* アイテム間のスペース */
+        margin-top: 30px;
+    }
+    
+    .skill-item, .skill-container img {
+        width: 70px; /* 正円の直径 */
+        height: 70px; /* 正円の直径 */
+        border-radius: 50%; /* 正円にする */
+        font-size: 30px; /* 文字サイズ */
+    }
+    
+    .skill-container img {
+        width: 50px; /* 正円の直径 */
+        height: 50px; /* 正円の直径 */
+        border-radius: 50%; /* 正円にする */
+        object-fit: cover; /* 画像が枠内に収まるように調整 */
+        padding: 10px; /* 画像が枠に触れないようにするための余白 */
     }
 
     .work {
@@ -272,7 +329,7 @@ footer p {
         text-align: center;
         color: #E6FFE9;
         background-color: #CCCCFF;
-        height: 350px;
+        height: 330px;
     }
     
     .skill h1{
@@ -283,6 +340,26 @@ footer p {
     .skill h2 {
         font-size: 20px;
         margin-top: -40px;
+    }
+
+    .skill-container {
+        gap: 40px; /* アイテム間のスペース */
+        margin-top: 30px;
+    }
+    
+    .skill-item, .skill-container img {
+        width: 120px; /* 正円の直径 */
+        height: 120px; /* 正円の直径 */
+        border-radius: 50%; /* 正円にする */
+        font-size: 40px; /* 文字サイズ */
+    }
+    
+    .skill-container img {
+        width: 100px; /* 正円の直径 */
+        height: 100px; /* 正円の直径 */
+        border-radius: 50%; /* 正円にする */
+        object-fit: cover; /* 画像が枠内に収まるように調整 */
+        padding: 10px; /* 画像が枠に触れないようにするための余白 */
     }
 
     .work {
@@ -373,7 +450,7 @@ footer p {
     .about img {
         max-width: 250px; /* 画像の大きさを調節 */
         height: auto; /* 画像の高さを自動調整 */
-        margin-right: 20px; /* 画像とテキストの間のスペースを調整 */
+        margin-right: 60px; /* 画像とテキストの間のスペースを調整 */
         margin-left: -20px;
         display: inline-block; /* 横並びにする */
         vertical-align: middle;
@@ -495,7 +572,7 @@ footer p {
     .about img {
         max-width: 300px; /* 画像の大きさを調節 */
         height: auto; /* 画像の高さを自動調整 */
-        margin-right: 20px; /* 画像とテキストの間のスペースを調整 */
+        margin-right: 100px; /* 画像とテキストの間のスペースを調整 */
         margin-left: -20px;
         display: inline-block; /* 横並びにする */
         vertical-align: middle;
