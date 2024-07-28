@@ -39,6 +39,24 @@ header h1 {
     margin-top: 15px;
 }
 
+.underlined {
+    position: relative;
+    display: inline-block; /* h1の幅をテキストの幅に合わせる */
+}
+
+.underlined::after {
+    content: '';
+    display: block;
+    width: 100%; /* 線の幅をh1の幅に合わせる */
+    height: 4px; /* 線の高さ */
+    background-color: #FFFFFF; /* 線の色 */
+    position: absolute;
+    left: 10px; /* 左に10pxずらす */
+    right: 10px; /* 右に10pxずらす */
+    bottom: -5px; /* h1の下に5pxスペースを空ける */
+}
+
+
 .about {
     text-align: center;
     width: 100%;
@@ -80,11 +98,14 @@ header h1 {
 .about .about-text {
     font-size: 30px;
     font-weight: bold;
+    line-height: 0.1; /* 行間を狭くする */
 }
 
 .ex-about {
+    margin-top: -15px;
     font-size: 20px;
     font-weight: lighter;
+    line-height: 1.8; /* 行間を狭くする */
 }
 
 .skill {
