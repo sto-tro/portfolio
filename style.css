@@ -2,7 +2,7 @@ body { /*全体に影響*/
     margin: 0; /*余白を削除してページの端から*/
     padding: 0; /*内側の余白をなくす*/
     font-family: 筑紫A丸ゴシック;
-    background-color: #E6FFE9;
+    background-color: #FFFF99;
     
     /*background: linear-gradient(45deg, #E6FFE9 25%, #FFFFFF 25%, #FFFFFF 50%, #E6FFE9 50%, #E6FFE9 75%, #FFFFFF 75%);
     background-size: 30px 30px; /* ストライプの幅を設定 */
@@ -10,7 +10,7 @@ body { /*全体に影響*/
 
 header {
     /*background-image: url('ttmy.jpg'); /* 画像のパスを指定 */
-    background-color: #CCCCFF;
+    background-color: #0033CC;
     background-position: center; /* 画像の位置を中央に */
     background-size: cover;
     height: 500px;
@@ -61,7 +61,7 @@ header h1 {
     text-align: center;
     width: 100%;
     height: 250px;
-    color: #CCCCFF;
+    color: #0033CC;
 }
 
 .about h1 {
@@ -84,7 +84,7 @@ header h1 {
     height: auto; /* 画像の高さを自動調整 */
     margin-right: 40px; /* 画像とテキストの間のスペースを調整 */
     display: flex;
-    border: 5px solid #CCCCFF; /* 枠線の色を指定 */
+    border: 5px solid #0033CC; /* 枠線の色を指定 */
     border-radius: 50%; /* 円形に切り取る */
     box-sizing: border-box; /* 枠線を含めたサイズを計算 */
 }
@@ -128,8 +128,8 @@ header h1 {
 
 .skill {
     text-align: center;
-    color: #E6FFE9;
-    background-color: #CCCCFF;
+    color: #FFFF99;
+    background-color: #0033CC;
     height: 200px;
 }
 
@@ -157,14 +157,14 @@ header h1 {
     align-items: center;
     width: 150px; /* 正円の直径 */
     height: 150px; /* 正円の直径 */
-    background-color: #E6FFE9; /* 円の背景色 */
+    background-color: #FFFF99; /* 円の背景色 */
     border-radius: 50%; /* 正円にする */
     font-size: 50px; /* 文字サイズ */
-    color: #CCCCFF; /* 文字色 */
+    color: #0033CC; /* 文字色 */
 }
 
 .skill-item {
-    background-color: #E6FFE9; /* 円の背景色 */
+    background-color: #FFFF99; /* 円の背景色 */
     font-family: '筑紫A丸ゴシック', sans-serif; /* フォントファミリーを指定 */
     font-weight: bold;
 }
@@ -173,14 +173,14 @@ header h1 {
     width: 120px; /* 正円の直径 */
     height: 120px; /* 正円の直径 */
     border-radius: 50%; /* 正円にする */
-    background-color: #E6FFE9; /* 円の背景色 */
+    background-color: #FFFF99; /* 円の背景色 */
     object-fit: cover; /* 画像が枠内に収まるように調整 */
     padding: 10px; /* 画像が枠に触れないようにするための余白 */
 }
 
 .work {
     text-align: center;
-    color: #CCCCFF;
+    color: #0033CC;
 }
 
 .work h1 {
@@ -216,7 +216,7 @@ header h1 {
 }
 
 footer {
-    background-color: #CCCCFF;
+    background-color: #0033CC;
     text-align: center;
     height: 30px;
     display: flex;
@@ -258,7 +258,7 @@ footer p {
 
     .about {
         height: 220px;
-        color: #CCCCFF;
+        color: #0033CC;
     }
 
     .about h1 {
@@ -347,7 +347,7 @@ footer p {
     .work-item {
         width: 70%; /* スマホで1列表示 */
         margin: 20px 0;
-        border: 2px solid #CC99FF; /* 枠線の太さ、スタイル、色を指定 */
+        border: 2px solid #0000CC; /* 枠線の太さ、スタイル、色を指定 */
         padding: 15px; /* 枠線とコンテンツの間に余白を追加 */
         border-radius: 8px; /* 枠線の角を丸くする */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 軽い影を追加する */
@@ -361,7 +361,7 @@ footer p {
 
     .work-item img {
         width: 100%; /* 幅を枠線に合わせる */
-        border: 4px solid #CBFFD3; /* 白い枠線を指定 */
+        border: 4px solid #FFFF00; /* 白い枠線を指定 */
         border-radius: 8px; /* 枠線の角を丸くする*/
         height: auto;
         display: block;
@@ -423,7 +423,7 @@ footer p {
 
     .about {
         height: 360px;
-        color: #CCCCFF;
+        color: #0033CC;
     }
 
     .about h1 {
@@ -465,7 +465,7 @@ footer p {
     .skill {
         text-align: center;
         color: #E6FFE9;
-        background-color: #CCCCFF;
+        background-color: #0033CC;
         height: 330px;
     }
     
@@ -518,7 +518,7 @@ footer p {
         margin: 20px;
         vertical-align: middle;
         text-align: center;
-        border: 2px solid #CC99FF; /* 枠線の太さ、スタイル、色を指定 */
+        border: 2px solid #0000CC; /* 枠線の太さ、スタイル、色を指定 */
         padding: 20px; /* 枠線とコンテンツの間に余白を追加 */
         border-radius: 8px; /* 枠線の角を丸くする */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 軽い影を追加する */
@@ -533,7 +533,7 @@ footer p {
         height: auto; /* 画像の高さを自動調整 */
         display: block;
         margin: 0 auto; /* 画像を中央揃え */
-        border: 4px solid #CBFFD3; /* 白い枠線を指定 */
+        border: 4px solid #FFFF00; /* 白い枠線を指定 */
         border-radius: 8px; /* 枠線の角を丸くする */
     }
     
@@ -588,7 +588,7 @@ footer p {
     
     .about {
         height: 420px;
-        color: #CCCCFF;
+        color: #0033CC;
     }
 
     .about h1 {
@@ -629,7 +629,7 @@ footer p {
     .skill {
         text-align: center;
         color: #E6FFE9;
-        background-color: #CCCCFF;
+        background-color: #0033CC;
         height: 350px;
     }
     
@@ -662,7 +662,7 @@ footer p {
         margin: 20px;
         vertical-align: middle;
         text-align: center;
-        border: 2px solid #CC99FF; /* 枠線の太さ、スタイル、色を指定 */
+        border: 2px solid #0000CC; /* 枠線の太さ、スタイル、色を指定 */
         padding: 20px; /* 枠線とコンテンツの間に余白を追加 */
         border-radius: 8px; /* 枠線の角を丸くする */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 軽い影を追加する */
@@ -677,7 +677,7 @@ footer p {
         height: auto; /* 画像の高さを自動調整 */
         display: block;
         margin: 0 auto; /* 画像を中央揃え */
-        border: 4px solid #CBFFD3; /* 白い枠線を指定 */
+        border: 4px solid #FFFF00; /* 白い枠線を指定 */
         border-radius: 8px; /* 枠線の角を丸くする */
     }
     
@@ -725,7 +725,7 @@ footer p {
 
     .about {
         height: 480px;
-        color: #CCCCFF;
+        color: #0033CC;
     }
 
     .about h1 {
@@ -759,7 +759,7 @@ footer p {
     .skill {
         text-align: center;
         color: #E6FFE9;
-        background-color: #CCCCFF;
+        background-color: #0033CC;
         height: 400px;
     }
     
@@ -796,7 +796,7 @@ footer p {
         margin: 30px;
         vertical-align: middle;
         text-align: center;
-        border: 2px solid #CC99FF;
+        border: 2px solid #0000CC;
         padding: 30px;
         border-radius: 8px;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -811,7 +811,7 @@ footer p {
         height: auto;
         display: block;
         margin: 0 auto;
-        border: 4px solid #CBFFD3;
+        border: 4px solid #FFFF00;
         border-radius: 8px;
     }
     
